@@ -9,7 +9,7 @@ def track_marker(frame):
         largest_contour = max(contours, key=cv2.contourArea)
         x, y, w, h = cv2.boundingRect(largest_contour)
         marker_position = (x + w // 2, y + h // 2)
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        #cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
         cv2.circle(frame, marker_position, 5, (0, 0, 255), -1)
     return frame, marker_position
 
