@@ -8,12 +8,6 @@ def blur_img():
     cv2.waitKey(0)  # Ждет нажатия любой клавиши
     cv2.destroyAllWindows()
 
-
-
-    
-
 if __name__ == "__main__":
     blur_img()
-
-cv2.waitKey("q")
-    
+    cv2.waitKey()
